@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import java.util.zip.Inflater;
 
@@ -29,7 +31,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodMenuViewHo
     public void onBindViewHolder(FoodMenuViewHolder holder, int position) {
         FoodItem item = mfoodItemArrayList.get(position);
         //TODO: Load ảnh từ đường dẫn ( tuần sau học )
-       // holder.anh
+        Glide.with(holder.itemView)
+                .load(item.getmPath())
+                .into(holder.anh);
         holder.ten.setText(item.getMten());
         holder.gia.setText(item.getMgia());
     }
