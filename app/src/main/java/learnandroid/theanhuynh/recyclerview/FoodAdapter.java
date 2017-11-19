@@ -17,6 +17,7 @@ import java.util.zip.Inflater;
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodMenuViewHolder> {
 
     private ArrayList<FoodItem> mfoodItemArrayList;
+
     @Override
     public FoodMenuViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 

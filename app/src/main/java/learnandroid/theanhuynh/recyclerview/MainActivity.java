@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView rc = findViewById(R.id.recycleView);
 
         // TODO: Đặt layout manager
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true);
         rc.setLayoutManager(layoutManager);
 
         //TODO: Tạo dữ liệu
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         itemArrayList.add(item4);
         itemArrayList.add(item5);
         itemArrayList.add(item6);
+
         // TODO: Tạo adapter
         FoodAdapter foodAdapter = new FoodAdapter();
         foodAdapter.setFoodItemArrayList(itemArrayList);

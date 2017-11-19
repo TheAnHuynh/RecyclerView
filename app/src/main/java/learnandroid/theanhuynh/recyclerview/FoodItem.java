@@ -5,6 +5,7 @@ package learnandroid.theanhuynh.recyclerview;
  */
 
 public class FoodItem {
+
     private String mten;
     private String mgia;
     private String mPath; // Tuần sau sẽ xài tới
